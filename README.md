@@ -1,6 +1,6 @@
 # Welcome to [Astro](https://astro.build)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/starter)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dffdc00d-c1bf-4f07-b851-58c7edab1bbb/deploy-status)](https://app.netlify.com/sites/my-astro-demo/deploys)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
