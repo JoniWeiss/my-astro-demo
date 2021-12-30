@@ -1,0 +1,8 @@
+:root {
+    --bg-clr-light: #fd9a00ff;
+
+}
+
+header {
+    background-color: var(--bg-clr-light);
+}

@@ -1,41 +1,37 @@
+---
+let {title} = Astro.props;
+---
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title></title>
+	<title>{title}</title>
 
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
-	<link rel="stylesheet" href={Astro.resolve('../styles/home.css')}>
+	<link rel="stylesheet" href={Astro.resolve('../styles/style.css')}>
 
-	<style>
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		}
-	</style>
 </head>
 <body>
-	<main>
-		<header>
-			<div>
-				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-			</div>
-		</header>
-		<!--
-
-		You can also use imported framework components directly in your markup!
+	<header>
+		<div class="container">
 		
-		Note: by default, these components are NOT interactive on the client.
-		The `:visible` directive tells Astro to make it interactive.
-		
-		See https://docs.astro.build/core-concepts/component-hydration/ 
+		<div class="logo"></div>
 
-		-->
+		<nav class="site-nav">
+			<ul>
+				<il><a href="/">Home</a></il>
+				<il><a href="/about">About</a></il>
+			</ul>
+		</nav>
+		</div>
+	</header>
 
-	</main>
+	<slot></slot>
+
+	<footer>
+	<div class="container">
+	<p>Copyright 2022</p>
+	</div>
+	</footer>
 </body>
 </html>
