@@ -15,12 +15,21 @@ let {title} = Astro.props;
 	<header>
 		<div class="container">
 		
-		<div class="logo"></div>
+		<div class="logo">
+			<img src="assets/logo.svg" alt="">
+		</div>
 
 		<nav class="site-nav">
 			<ul>
 				<il><a href="/">Home</a></il>
 				<il><a href="/about">About</a></il>
+				<il><a href="/programs">Programs</a>
+					<ul>
+						<il><a href="/counseling">Counseling</a></il>
+					</ul>
+				</il>
+				<il><a href="/blog">Blog</a></il>
+				<il><a href="/contact-us">Contact Us</a></il>
 			</ul>
 		</nav>
 		</div>
